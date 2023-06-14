@@ -1,0 +1,22 @@
+                                ====    create an EBS volume and mount on ec2 instance  ====  
+1......
+       create instance
+name:-- EBS-instance
+2........
+          create EBSvolume
+          name:-volume-01
+                :--attch volume
+3.......
+         open EBS-instance 
+                        copy public ip of EC2 instance shh the instence created on mobaxtrem
+4.......
+        #........sudo su 
+         #.........df -hT
+        #..........mkfs -t xfs /dev/xvdf
+        #..........mkdir /mnt/demodir
+         #..........cd /mnt/demodir
+          #..........mount /dev/xvdf /mnt/demodir
+         #...........df -hT
+        #............mount -a
+         #............lsblk
+    ==== = =  =  ==================[show mounting]====================================================================================
